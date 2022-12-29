@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Sudoku</title>
+    <title>Unity WebGL Player | Sudoku BBG</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=337 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Sudoku</div>
+        <div id="unity-build-title">Sudoku BBG</div>
       </div>
     </div>
     <script>
@@ -56,14 +56,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Sudoku v.6 Build.loader.js";
+      var loaderUrl = buildUrl + "/Staging v.1.asm.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Sudoku v.6 Build.data.unityweb",
-        frameworkUrl: buildUrl + "/Sudoku v.6 Build.framework.js.unityweb",
-        codeUrl: buildUrl + "/Sudoku v.6 Build.wasm.unityweb",
+        dataUrl: buildUrl + "/Staging v.1.data.unityweb",
+        frameworkUrl: buildUrl + "/Staging v.1.asm.framework.js.unityweb",
+        codeUrl: buildUrl + "/Staging v.1.asm.js.unityweb",
+        memoryUrl: buildUrl + "/Staging v.1.asm.mem.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "Sudoku",
+        productName: "Sudoku BBG",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -82,7 +83,7 @@
         config.devicePixelRatio = 1;
 
       } else {
-        canvas.style.width = "960px";
+        canvas.style.width = "337px";
         canvas.style.height = "600px";
       }
       loadingBar.style.display = "block";
